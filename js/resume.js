@@ -27,6 +27,9 @@
 
   $('[data-toggle="tooltip"]').tooltip();
 
+  $('.card.7').click(function () {
+    window.open('https://sathishvasi.github.io/sathish-timer', '_blank');
+  })  
   $('.card.6').click(function () {
     window.open('https://sathishvasi.github.io/grid-css/', '_blank');
   })
