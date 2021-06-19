@@ -39,7 +39,8 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 20px;
+  font-family: 'Muli';
 }
 
 p.lead {
@@ -50,8 +51,8 @@ p.lead {
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  font-size: 1.5rem;
+  font-family: 'Muli';  
+  font-size: 12px;
 }
 
 .social-icons a {
@@ -150,6 +151,33 @@ section.resume-section .resume-item .resume-date {
   min-width: none;
 }
 
+.nav-title{
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 26px;
+}
+
+.download-btn{
+  display: inline-block;
+}
+
+@media (max-width: 525px) {
+  #about h1{
+    width: 100%;
+  }
+  .download-cv{
+    transform: translate(0) !important;
+    margin-bottom: 20px;
+  }
+  .download-btn{
+    display: block;
+  }
+  .download-btn,
+  #about .subheading,
+  #about h1{
+    text-align: center;
+  }
+}
+
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
@@ -215,12 +243,36 @@ i.fa-li.fa.fa-check {
 ul.list-inline.dev-icons {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
 }
 
 li.list-inline-item {
   display: flex;
   align-items: center;
+  margin-bottom: 15px;
+}
+
+#about .subheading{
+  font-size: 16px;
+}
+
+.download-cv{
+  padding: 10px 24px;
+  background: #3898bd;
+  color: white !important;
+  border-radius: 50px;
+  vertical-align: middle;
+  transform: translateY(-15px);
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 16px;
+  transition: 0.5s ease all;
+}
+
+.download-cv:hover {
+  text-decoration: none;
+  background: #343a40;
 }
 
 li.list-inline-item.ionic {
@@ -245,10 +297,20 @@ li.list-inline-item.ionic svg {
   flex-wrap: wrap;
 }
 
+.additional-skills{
+  margin-bottom: 40px;
+}
+
+.additional-skills li img {
+  height: 40px;
+  width: 40px;
+  margin-right: 15px;
+}
+
 .card {
   margin: 30px 40px;
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border-radius: 40px;
   box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
   cursor: pointer;
